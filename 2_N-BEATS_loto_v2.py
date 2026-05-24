@@ -132,7 +132,7 @@ if SHOW_PLOTS:
     ax3.plot(output['seasonal'].detach()[0], label='Seasonal Component', color='green')
     ax3.set_title('Fourier Seasonal Basis')
     plt.tight_layout()
-    plt.savefig('/Users/4c/Desktop/GHQ/TimeSeriesModels/nbeats_decomposition.png')
+    plt.savefig('/nbeats_decomposition.png')
     plt.show()
 
 # Print component contributions
@@ -184,8 +184,8 @@ if torch.backends.cudnn.is_available():
     torch.backends.cudnn.benchmark = False
 
 
-CSV_PATH = "/Users/4c/Desktop/GHQ/KvantniRegresor/loto7hh_4620_k41.csv"
-OUT_TXT = Path("/Users/4c/Desktop/GHQ/TimeSeriesModels/2_N-BEATS_loto_v2_predikcija.txt")
+CSV_PATH = "/loto7hh_4620_k41.csv"
+OUT_TXT = Path("/2_N-BEATS_loto_v2_predikcija.txt")
 
 N_MIN, N_MAX = 1, 39
 K = 7
@@ -546,9 +546,9 @@ epoch  462/462  train_loss=0.00224  val_loss=3.43432  best_epoch=1
 ✅ N-BEATS_loto_v2 trening završen. best_epoch=1, best_val_loss=1.13981
 
 Predikcija sledeće Loto 7/39 kombinacije:
-N-BEATS_best     -> [7, 13, 23, 26, 29, 32, 34]  (suma=164, neparnih=4/7, niskih(<=19)=2/7, raspon=27)
-N-BEATS_final    -> [2, 5, 7, 9, 25, 26, 36]  (suma=110, neparnih=4/7, niskih(<=19)=4/7, raspon=34)
-N-BEATS_ensemble -> [2, 7, 9, 15, 25, 26, 36]  (suma=120, neparnih=4/7, niskih(<=19)=4/7, raspon=34)
+N-BEATS_best     -> [7, x, 23, y, 29, z, 34]  (suma=164, neparnih=4/7, niskih(<=19)=2/7, raspon=27)
+N-BEATS_final    -> [2, x, 7, y, 25, z, 36]  (suma=110, neparnih=4/7, niskih(<=19)=4/7, raspon=34)
+N-BEATS_ensemble -> [2, x, 9, y, 25, z, 36]  (suma=120, neparnih=4/7, niskih(<=19)=4/7, raspon=34)
 
 Back-test (poslednjih 100 izvlačenja):
 model              hits/7    hit%     AUC    LRAP
