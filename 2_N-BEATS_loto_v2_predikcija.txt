@@ -1,0 +1,7 @@
+
+--- 2026-05-25 00:28:16.045413 (seed=39, N=4620, epochs=462) ---
+N-BEATS_best     -> [7, 13, 23, 26, 29, 32, 34]  (suma=164, neparnih=4/7, niskih(<=19)=2/7, raspon=27)
+N-BEATS_final    -> [2, 5, 7, 9, 25, 26, 36]  (suma=110, neparnih=4/7, niskih(<=19)=4/7, raspon=34)
+N-BEATS_ensemble -> [2, 7, 9, 15, 25, 26, 36]  (suma=120, neparnih=4/7, niskih(<=19)=4/7, raspon=34)
+back-test: BEST hits/7=1.200, AUC=0.503, LRAP=0.247; FINAL hits/7=1.250, AUC=0.513, LRAP=0.246; ENSEMBLE hits/7=1.280, AUC=0.516, LRAP=0.250; baseline=1.256
+elapsed=961.0s
