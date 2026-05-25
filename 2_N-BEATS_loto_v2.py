@@ -155,8 +155,8 @@ class NBEATS(nn.Module):
 # =========================
 # Učitavanje Loto 7/39 CSV-a
 # =========================
-CSV_PATH = "/Users/4c/Desktop/GHQ/KvantniRegresor/loto7hh_4620_k41.csv"
-OUT_TXT = Path("/Users/4c/Desktop/GHQ/TimeSeriesModels/2_N-BEATS_loto_v2_predikcija.txt")
+CSV_PATH = "/loto7hh_4620_k41.csv"
+OUT_TXT = Path("/2_N-BEATS_loto_v2_predikcija.txt")
 
 LOOK_BACK = 10
 WINDOWS = (20, 50, 100)
@@ -493,9 +493,9 @@ epoch  100/100  train_loss=0.01454  val_loss=3.51021  best_epoch=1
 ✅ Trening završen. best_epoch=1, best_val_loss=1.13932
 
 Predikcija sledeće Loto 7/39 kombinacije:
-N-BEATS_best     -> [7, 8, 10, 23, 26, 32, 34]  (suma=140, neparnih=2/7, niskih(<=19)=3/7, raspon=27)
-N-BEATS_final    -> [15, 17, 21, 25, 26, 30, 36]  (suma=170, neparnih=4/7, niskih(<=19)=2/7, raspon=21)
-N-BEATS_ensemble -> [17, 21, 23, 25, 26, 30, 36]  (suma=178, neparnih=4/7, niskih(<=19)=1/7, raspon=19)
+N-BEATS_best     -> [7, x, 10, y, 26, z, 34]  (suma=140, neparnih=2/7, niskih(<=19)=3/7, raspon=27)
+N-BEATS_final    -> [15, x, 21, y, 26, z, 36]  (suma=170, neparnih=4/7, niskih(<=19)=2/7, raspon=21)
+N-BEATS_ensemble -> [17, x, 23, y, 26, z, 36]  (suma=178, neparnih=4/7, niskih(<=19)=1/7, raspon=19)
 
 Back-test (poslednjih 100 izvlačenja):
 model              hits/7    hit%     AUC    LRAP
