@@ -1,7 +1,7 @@
 
 --- 2026-05-25 08:21:12.392096 (seed=39, N=4620, epochs=100) ---
-N-BEATS_best     -> [7, 8, 10, 23, 26, 32, 34]  (suma=140, neparnih=2/7, niskih(<=19)=3/7, raspon=27)
-N-BEATS_final    -> [15, 17, 21, 25, 26, 30, 36]  (suma=170, neparnih=4/7, niskih(<=19)=2/7, raspon=21)
-N-BEATS_ensemble -> [17, 21, 23, 25, 26, 30, 36]  (suma=178, neparnih=4/7, niskih(<=19)=1/7, raspon=19)
+N-BEATS_best     -> [7, x, 10, y, 26, z, 34]  (suma=140, neparnih=2/7, niskih(<=19)=3/7, raspon=27)
+N-BEATS_final    -> [15, x, 21, y, 26, z, 36]  (suma=170, neparnih=4/7, niskih(<=19)=2/7, raspon=21)
+N-BEATS_ensemble -> [17, x, 23, y, 26, z, 36]  (suma=178, neparnih=4/7, niskih(<=19)=1/7, raspon=19)
 back-test: BEST hits/7=1.130, AUC=0.492, LRAP=0.234; FINAL hits/7=1.270, AUC=0.509, LRAP=0.243; ENSEMBLE hits/7=1.270, AUC=0.499, LRAP=0.238; baseline=1.256
 elapsed=277.4s
